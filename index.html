@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form Kendaraan</title>
+  </head>
+  <body>
+
+
+    <div class="jumbotron text-sm-center alert-primary">
+        <div class="container">
+            <h1>Form Daily Cheklist Kendaraan</h1>
+            <p class="lead">Ini adalah form kendaraan demo</p>
+
+        </div>
+    </div>
+    <form class="data" name="kendaraan"  >
+        <section class="awal">
+        <div class="container">
+                <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                        <label class="mr-sm-2" for="inlineFormCustomSelect">Nama Petugas </label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="nama">
+                            <option value="-" selected>Pilih Nama Petugas</option>
+                            <option value="Sunardi">Sunardi</option>
+                            <option value="Jiwan">Jiwan</option>
+                            <option value="Siswanto">Siswanto</option>
+                        </select>
+                    </div>
+                </div>
+            <div class="row justify-content-md-center">
+                <div class="col-5 justify-content-sm-center">
+                    <label class="mr-sm-1" for="exampleFormControlFile1">Jam</label>
+                <input type="time" class="form-control" placeholder="Jam" name="jam">
+                </div>
+                <div class="col-5 justify-content-sm-center">
+                    <label class="mr-sm-1" for="exampleFormControlFile2">Tanggal</label>
+                <input type="date" class="form-control" placeholder="Tanggal" name="tanggal">
+                </div>
+            </div>
+            <br>
+        </section>
+        <br>
+        <section class="kedua">
+            <div class="container">
+                <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-1" for="inlineFormCustomSelect">Jenis Kendaraan</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="jenis kendaraan">
+                        <option value="-" selected>Pilih Jenis Kendaraan</option>
+                        <option value="DOUBLE CABIN PAN KH 8527 GP">DOUBLE CABIN PAN KH 8527 GP</option>
+                        <option value="HILUK SC KH 8490 GP">HILUK SC KH 8490 GP</option>
+                        <option value="INOVA KH 1558 GK">INOVA KH 1558 GK</option>
+                        <option value="INNOVA KH 1174 G">INNOVA KH 1174 G</option>
+                        <option value="HIACE KH 7001 G">HIACE KH 7001 G</option>
+                        <option value="AVANZA NEW KH 1065 GR">AVANZA NEW KH 1065 GR</option>
+                        <option value="AVANZA TRAC KH 1295 TR">AVANZA TRAC KH 1295 TR</option>
+                        <option value="DC SAP KH 8955 GL">DC SAP KH 8955 GL</option>
+                    </select>
+                    </div>
+                    </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-sm-3">
+                        <label for="">KM Kendaraan Pagi</label>
+                        <input type="text" class="form-control" placeholder="KM Kendaraan Pagi" name="km pagi">
+                    </div>
+                    <div class="col-sm-3">
+                            <label for="contohupload1">Upload Foto KM Pagi</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto km pagi">
+                        </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-sm-3">
+                        <label for="">KM Kendaraan Sore</label>
+                        <input type="text" class="form-control" placeholder="KM Kendaraan Pagi" name="km sore">
+                    </div>
+                    <div class="col-sm-3">
+                            <label for="contohupload1">Upload Foto KM Sore</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto kendaraan sore">
+                        </div>
+                </div>
+            </div>
+            <br>
+        </section>
+        <br>
+        <section class="tiga">
+            <div class="container">
+                
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-1" for="inlineFormCustomSelect">Oli Mesin</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="oli mesin">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Penuh">Penuh</option>
+                        <option value="Setengah">Setengah</option>
+                        <option value="Kurang dari Setengah">Kurang dari Setengah</option>
+                    </select>
+                        <div class="form-col-sm my-1">
+                            <label for="contohupload1">Upload Foto Oli Mesin Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto oli mesin">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">Oli Rem</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="oli rem">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Penuh">Penuh</option>
+                        <option value="Setengah">Setengah</option>
+                        <option value="Kurang dari Setengah">Kurang dari Setengah</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto Oli Rem Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto oli rem">
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        <br>
+        </section>
+        <br>
+        <section class="empat">
+            <div class="container">
+                
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">Oli Power Steering</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="oli power steering">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Penuh">Penuh</option>
+                        <option value="Setengah">Setengah</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto Oli Steering Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto oli power steering">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">Air Radiator</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="air radiator">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Penuh">Penuh</option>
+                        <option value="Setengah">Setengah</option>
+                        <option value="Kurang dari Setengah">Kurang dari Setengah</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto Air Radiator Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto air radiato">
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        <br>
+        </section>
+        <br>
+        <section class="lima">
+            <div class="container">
+                
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">Air Eccu/Battrai</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="air eccu">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Tiap Sel Penuh">Tiap Sel Penuh</option>
+                        <option value="Tidak Penuh">Tidak Penuh</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto Air Eccu/Battrai Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto air eccu">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">BBM Pagi</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="bbm pagi">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Full">Full</option>
+                        <option value="3/4+">3/4+</option>
+                        <option value="3/4">3/4</option>
+                        <option value="3/4-">3/4-</option>
+                        <option value="1/2+">1/2+</option>
+                        <option value="1/2">1/2</option>
+                        <option value="1/2-">1/2-</option>
+                        <option value="1/4+">1/4+</option>
+                        <option value="1/4">1/4</option>
+                        <option value="1/4-">1/4-</option>
+                        <option value="E/Empyt">E/Empyt</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto BBM Pagi Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto bbm pagi">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">BBM Sore</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="bbm sore">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Full">Full</option>
+                        <option value="3/4+">3/4+</option>
+                        <option value="3/4">3/4</option>
+                        <option value="3/4-">3/4-</option>
+                        <option value="1/2+">1/2+</option>
+                        <option value="1/2">1/2</option>
+                        <option value="1/2-">1/2-</option>
+                        <option value="1/4+">1/4+</option>
+                        <option value="1/4">1/4</option>
+                        <option value="1/4-">1/4-</option>
+                        <option value="E/Empyt">E/Empyt</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto BBM Sore Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto bbm sore">
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        <br>
+        </section>
+        <br>
+        <section class="enam">
+            <div class="container">
+                
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">Kondisi Stater</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="kondisi stater">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Tidak Normal">Tidak Normal</option>
+                    </select>
+                    </div>
+                    </div>
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">Kaca dan Lampu</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="kaca dan lampu">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Berfungsi/Tidak Mati">Berfungsi/Tidak Mati</option>
+                        <option value="Tidak Sesuai Strandart">Tidak Sesuai Strandart</option>
+                        <option value="Retak/Pecah">Retak/Pecah</option>
+                        <option value="Tidak Pecah/Normal">Tidak Pecah/Normal</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto Kaca dan Lampu Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto kaca dan lampu">
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        <br>
+        </section>
+        <br>
+        <section class="tujuh">
+            <div class="container"> 
+                
+                    
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">Klakson</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="klakson">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Ada dan Berfungsi">Ada dan Berfungsi</option>
+                        <option value="Tidak Berfungsi">Tidak Berfungsi</option>
+                    </select>
+                    </div>
+                    </div>
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">Lampu Sein L/R</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="lampu sein R/L">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Berfungsi/Normal">Berfungsi/Normal</option>
+                        <option value="Tidak Sesuai Standart">Tidak Sesuai Standart</option>
+                        <option value="Retak/Pecah">Retak/Pecah</option>
+                        <option value="Tidak Retak">Tidak Retak</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto Sein L/R Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto lampu sein">
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        <br>
+        </section>
+        <br>
+        <section class="delapan">
+            <div class="container">
+                
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">Ace</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="ace">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Dingin">Dingin</option>
+                        <option value="Perlu Tambah Freon">Perlu Tambah Freon</option>
+                        <option value="Tidak Berfungsi">Tidak Berfungsi</option>
+                    </select>
+                    </div>
+                    </div>
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">Body Luar/Dalam</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="bady luar dalam">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Bersih">Bersih</option>
+                        <option value="Kotor, Perlu di Cuci">Kotor, Perlu di Cuci</option>
+                        <option value="Kotor, Perlu di Lap">Kotor, Perlu di Lap</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto Body Luar/Dalam Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto body luar dalam">
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        <br>
+        </section>
+        <br>
+        <section class="sembilan">
+            <div class="container">
+                
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">STNK</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="stnk">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Ada, Hidup">Ada, Hidup</option>
+                        <option value="Ada, Perlu Segera di Update">Ada, Perlu Segera di Update</option>
+                        <option value="Ada, Sudah Tidak Update">Ada, Sudah Tidak Update</option>
+                        <option value="Tidak Ada">Tidak Ada</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto STNK Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto stnk">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">Buku KIR</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="kir">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Ada">Ada</option>
+                        <option value="Tidak Ada">Tidak Ada</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto Buku KIR Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto kir">
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        <br>
+        </section>
+        <br>
+        <section class="sepuluh">
+            <div class="container">
+                
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">Kunci BAN</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="kunci ban">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Ada">Ada</option>
+                        <option value="Tidak Ada">Tidak Ada</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto Kunci BAN Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto ban">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">Dongkrak BAN</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="dongkrak ban">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Ada, Berfungsi">Ada, Berfungsi</option>
+                        <option value="Ada, Tidak Berfungsi">Ada, Tidak Berfungsi</option>
+                        <option value="Tidak Ada">Tidak Ada</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto Dongkrak BAN Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto dongkrak ban">
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        <br>
+        </section>
+        <br>
+        <section class="sebelas">
+            <div class="container">
+                
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">BAN Serep</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="ban serep">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Ada, Baik">Ada, Baik</option>
+                        <option value="Ada, Tidak Baik/layak">Ada, Tidak Baik/layak</option>
+                        <option value="Tidak Ada">Tidak Ada</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto BAN Serep Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto ban serep">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">APAR</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="apar">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Ada, Berfungsi">Ada, Berfungsi</option>
+                        <option value="Ada, Tidak Berfungsi">Ada, Tidak Berfungsi</option>
+                        <option value="Tidak Ada">Tidak Ada</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto APAR Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto apar">
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        <br>
+        </section>
+        <br>
+        <section class="duabelas">
+            <div class="container">
+                
+                    <div class="form-row justify-content-md-center">
+                    <div class="col-md-4 my-1">
+                    <label class="mr-sm-" for="inlineFormCustomSelect">Sabuk Pengaman</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="sabuk pengaman">
+                        <option value="-" selected>Pilih Kondisi Aktual</option>
+                        <option value="Ada, Berfungsi">Ada, Berfungsi</option>
+                        <option value="Ada, Tidak Berfungsi">Ada, Tidak Berfungsi</option>
+                    </select>
+                        <div class="form-col my-1">
+                            <label for="contohupload1">Upload Foto Sabuk Pengaman Saat Ini</label>
+                            <input type="file" class="form-control-file" id="contohupload1" name="foto sabuk pengaman">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="my-alert alert-success alert-dismissible fade show d-none" role="alert">
+                    <strong>Terimakasih</strong> Data Sudah di Simpan.
+                    </button>
+                </div>
+
+            <div class="form-row justify-content-md-center">
+                <div class="col-md-4">
+                    <label for="exampleFormControlFile1">Informasi Tambahan Terkait Kendaraan</label>
+                <input type="text" class="form-control" placeholder="Informasi Tambahan" name="masukan">
+                </div>
+
+        </div>
+        <br>
+        <div class="btn-kirim row justify-content-md-center">
+         <button class="btn btn-primary justify-content-md-center" type="submit">Submit form</button>
+        </div>
+
+         </div>
+            </div>
+            <br>
+        </section>
+        <br>
+    </form>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyUfItCP0JHVGYNjUTgUTkRZONXWWpsgHgSr9UNeu4_W5T9k4D-1BeSZleO9BB4sc1s/exec'
+  const form = document.forms['kendaraan']
+  const btnKirim = document.querySelector('.btn-kirim')
+  const myAlert = document.querySelector('.my-alert')
+
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        myAlert.classList.toggle('d-none');
+        form.reset();
+        console.log('Success!', response);
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
